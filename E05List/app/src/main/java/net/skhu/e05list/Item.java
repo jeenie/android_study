@@ -6,6 +6,7 @@ import java.util.Date;
 public class Item {
     String title;
     Date createTime;
+    boolean checked;
 
     static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -25,4 +26,7 @@ public class Item {
     public String getCreateTimeFormatted() {
         return  format.format(createTime);
     }
+
+    public boolean isChecked() { return checked; }
+    public void setChecked(boolean checked) { this.checked = checked; }
 }

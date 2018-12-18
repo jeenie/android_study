@@ -8,24 +8,33 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAdapter.ViewHolder>{
     //inner class
-    class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         TextView textView1, textView2;
 
         public ViewHolder(View view) {
             super(view);
             textView1 = view.findViewById(R.id.textView1);
             textView2 = view.findViewById(R.id.textView2);
+            view.setOnClickListener(this);
         }
 
         public void setData() {
             Item item = arrayList.get(getAdapterPosition());
             textView1.setText(item.getTitle());
             textView2.setText(item.getCreateTimeFormatted());
+        }
+
+        @Override
+        public void onClick(View view) {
+            Item item = arrayList.get(super.getAdapterPosition());
+            String s = String.format("index: %d, title: %s", super.getAdapterPosition(), item.getTitle());
+            Toast.makeText(view.getContext(), s, Toast.LENGTH_SHORT).show();
         }
     }
 
