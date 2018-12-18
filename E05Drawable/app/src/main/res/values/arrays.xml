@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="list1">
+        <item>1 안드로이드 프로그래밍 기술</item>
+        <item>2 자바 웹 서버 프로그래밍 기술</item>
+        <item>3자바 스프링 프로그래밍 기술</item>
+        <item>4 데이터베이스 설계 기술</item>
+        <item>5 HTML 자바스크립트 프로그래밍 기술</item>
+        <item>6 자바스크립트 서버 프로그래밍 기술</item>
+        <item>7 안드로이드 프로그래밍 기술</item>
+        <item>8 자바 웹 서버 프로그래밍 기술</item>
+        <item>9 자바 스프링 프로그래밍 기술</item>
+        <item>10 데이터베이스 설계 기술</item>
+        <item>11 HTML 자바스크립트 프로그래밍 기술</item>
+        <item>12 자바스크립트 서버 프로그래밍 기술</item>
+        <item>13 안드로이드 프로그래밍 기술</item>
+        <item>14 자바 웹 서버 프로그래밍 기술</item>
+        <item>15 자바 스프링 프로그래밍 기술</item>
+        <item>16 데이터베이스 설계 기술</item>
+        <item>17 HTML 자바스크립트 프로그래밍 기술</item>
+        <item>18 자바스크립트 서버 프로그래밍 기술</item>
+    </string-array>
+
+</resources>
