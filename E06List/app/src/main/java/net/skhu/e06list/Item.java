@@ -7,11 +7,9 @@ public class Item {
     String title;
     Date createTime;
     boolean checked;
-
     static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     public Item() {
-
     }
 
     public Item(String title) {
@@ -23,12 +21,27 @@ public class Item {
         return title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public Date getCreateTime() {
         return createTime;
     }
 
+    public void setCreateTime(Date date) {
+        this.createTime = date;
+    }
+
     public String getCreateTimeFormatted() {
         return format.format(createTime);
+    }
+
+    public void setCreateTimeFormatted(String s) {
+        try {
+            this.createTime = format.parse(s);
+        } catch (Exception e) {
+        }
     }
 
     public boolean isChecked() {
@@ -39,7 +52,8 @@ public class Item {
         this.checked = checked;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return String.format("(%s)", title);
     }
 }
